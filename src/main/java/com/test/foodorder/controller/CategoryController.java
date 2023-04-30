@@ -23,7 +23,7 @@ public class CategoryController {
 
 	@GetMapping("/categories")
 	public ResponseEntity<List<Category>> getCategory() {
-
+System.out.println("Changed code 30april 23" );
 		List<Category> list = categoryService.findAll();
 		// Optional<Category> category = categoryService.findAll();
 		System.out.println("category List:" + list);
