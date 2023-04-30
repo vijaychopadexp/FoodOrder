@@ -33,6 +33,7 @@ System.out.println("Changed code 30april 23" );
 
 	@GetMapping("/category/{categoryID}/items")
 	public ResponseEntity<List<Items>> getAllItemsByCategoryId(@PathVariable(value = "categoryID") Long categoryID) {
+		System.out.println("Changed code 30april 23 8PM" );
 		List<Items> list = categoryService.findByCategoryId(categoryID);
 		return ResponseEntity.ok().body(list);
 	}
